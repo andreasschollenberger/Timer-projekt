@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="function.js" defer></script>
+</head>
+<body>
+
+    <div class="cotainer">
+        <div class="control">
+            <div class="inputfeld">
+                <label for="targetTime">Geben Sie die Zielzeit ein (Stunden:Minuten:Sekunden): </label>
+                <input type="text" id="targetTime" placeholder="01:12:32" value="00:00:03">
+            </div>
+        
+            <div class="btn-timer1">
+                <button class="timerBtn" onclick="startCountdown()">Starten</button>
+                </div>
+        
+            <div class="btn-timer2">
+                <button class="timerBtn" onclick="stopCountdown()">Stoppen</button>
+                </div>
+        </div>
+        
+        <main class="timer">
+            <!-- <div id="countdown"></div> -->
+                <div class="count1" id="hours">00</div>
+                <div class="point1">:</div>
+                <div class="count2" id="minutes">00</div>
+                <div class="point2">:</div>
+                <div class="count3" id="seconds">00</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
