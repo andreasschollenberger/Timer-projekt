@@ -57,7 +57,7 @@ if(!match) {
         countHour.innerText = '00';
         countMinute.innerText = '00';
         countSecond.innerText = '00';
-        conter = 0;
+        counter = 0;
         clearInterval(countdownInterval);
     }
   }
